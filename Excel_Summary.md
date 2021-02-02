@@ -29,7 +29,7 @@
 ### Comparison Operator
 
 | Operator                             |       Description        | Notes |
-|--------------------------------------|:------------------------:|-------|
+|--------------------------------------|------------------------|-------|
 | `<` (Less than sign)                 |        Less than         | NULL  |
 | `>` (Greater than sign)              |       Greater than       | NULL  |
 | `=` (Equal sign)                     |         Equal to         | NULL  |
@@ -56,8 +56,8 @@
 | COUNTA     | Counts the number of cells that are not empty in a range.                      | `=COUNTA(Range)` | More than 1 Range can be added.                                                                                |
 | COUNTBLANK | Count the number of empty cells in a range of cells.                           | `=COUNTBLANK(range)` | Cells with formulas that return "" (empty text) are also counted. <br> Cells with zero values are not counted. |
 | COUNTIF    | Counts the number of cells which contain data fulfilling a specific condition. | `=COUNTIF(Range,Condition)` | NULL                                                                                                           |
-| LARGE      | Finds the *n*th largest value within the given range of cells.                 | `=LARGE(Range,n)` | **Not Given in HKDSE**<br> =LARGE(Range, 1) is equal to =MAX(Range)                                            |
-| SMALL      | Finds the *n*th smallest value within the given range of cells.                | `=SMALL(Range,n)` | **Not Given in HKDSE**<br> =SMALL(Range, 1) is equal to =MIN(Range)                                            |
+| LARGE      | Finds the *n*th largest value within the given range of cells.                 | `=LARGE(Range,n)` | **Not Given in HKDSE** <br> =LARGE(Range, 1) is equal to =MAX(Range)                                            |
+| SMALL      | Finds the *n*th smallest value within the given range of cells.                | `=SMALL(Range,n)` | **Not Given in HKDSE** <br>=SMALL(Range, 1) is equal to =MIN(Range)                                            |
 | MODE       | Finds the mode of the set of data given.                                       | `=MODE(RANGE)` | **Not Given in HKDSE**                                                                                         |
 
 ### Mathematical Functions
@@ -72,8 +72,8 @@
 | INT      | Rounds down (casts) the value given to an integer.                                                                           | `=INT(Number)` | NULL                                                                                                                                                                                                                                                         |
 | MOD      | Finds the remainder (mod) of the division between number *n* and dividend *p*.| `=MOD(n,p)` | **Not Given in HKDSE**<br> =MOD(9, 2) = 1|
 | POWER    | Returns the value of the base *n* to the power *p*.| `=POWER(N,P)` | **Not Given in HKDSE**<br> =POWER(3, 2) = 9|
-| RAND     | Generates a random decimal within the range 0<=x<1.| `=RAND()` | To scale the number to between 0 to *x*, use = x * RAND().<br> To scake the number to between *y* and *z*, use = (z - y) * RAND() + y
-| RANK     | Returns the rank of a number in a list of numbers. | `RANK(Number,Range,[Order])` | Order is Optional
+| RAND     | Generates a random decimal within the range 0<=x<1.| `=RAND()` | To scale the number to between 0 to *x*, use = x * RAND().<br> To scale the number to between *y* and *z*, use = (z - y) * RAND() + y
+| RANK     | Returns the rank of a number in a list of numbers. | `RANK(Number,Range,[Order])` | Order is Optional <br> (i.e., 0 for decending and 1 for ascending)
 | ROUND    | The ROUND function rounds a number to a specified number of digits. | `=ROUND(Number, Num_digits)` | If num_digits is greater than 0 (zero), then number is rounded to the specified number of decimal places. <br> If num_digits is 0, the number is rounded to the nearest integer. <br>If num_digits is less than 0, the number is rounded to the left of the decimal point.
 
 ### Logical Functions
